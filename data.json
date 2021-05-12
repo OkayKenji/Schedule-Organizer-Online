@@ -1,0 +1,108 @@
+{
+    "classes": {
+        "semester": "Spring 2025",
+        "start": "1/5/2025",
+        "numWeeks": 16,
+        "daysOff": [],
+        "classList": [{
+                "crn": "02048",
+                "course": "ABC 128",
+                "title": "Class A",
+                "classIns": "Prof. A",
+                "classStart": "12:05",
+                "classEnd": "14:05",
+                "days": "MW",
+                "online": "www.google.com",
+                "classRoom": "N/A",
+                "color": {
+                    "background": "rgb(255,91,61)",
+                    "textColor": "rgb(255,255,255)",
+                    "border": "2px dashed rgb(255,255,255)"
+                },
+                "assignments": [{
+                    "dueDate": "1/6/2025",
+                    "assignedDate": "1/6/2025",
+                    "title": "Read syllabus",
+                    "type" : "Homework",
+                    "description": "Read it."
+                }]
+            },
+            {
+                "crn": "82332",
+                "course": "ABC 256",
+                "title": "Class B",
+                "classIns": "Prof. B",
+                "classStart": "13:25",
+                "classEnd": "16:50",
+                "days": "TRS",
+                "online": "www.google.com",
+                "classRoom": "N/A",
+                "color": {
+                    "background": "rgb(0, 128, 255)",
+                    "textColor": "rgb(255,255,255)",
+                    "border": "2px dashed rgb(255,255,255)"
+                },
+                "assignments": [{
+                    "dueDate": "1/11/2025",
+                    "assignedDate": "1/7/2025",
+                    "title": "First Quiz",
+                    "type" : "Quiz",
+                    "description": "Whaaaat? A quiz already!?"
+                }]
+            },
+            {
+                "crn": 32203,
+                "course": "ABC 512",
+                "title": "Class C",
+                "classIns": "Prof. CC",
+                "classStart": "8:10",
+                "classEnd": "9:55",
+                "days": "M",
+                "online": "www.google.com",
+                "classRoom": "N/A",
+                "color": {
+                    "background": "rgb(0, 200, 64)",
+                    "textColor": "rgb(255,255,255)",
+                    "border": "2px dashed rgb(255,255,255)"
+                },
+                "assignments": [{
+                    "dueDate": "2/2/2025",
+                    "assignedDate": "1/6/2025",
+                    "title": "Project A",
+                    "type" : "Project",
+                    "description": "report on some stuff."
+                }]
+            },
+            {
+                "crn": 93232,
+                "course": "ABC 999",
+                "title": "Class D",
+                "classIns": "Prof. D",
+                "classStart": "16:55",
+                "classEnd": "18:20",
+                "days": "F",
+                "online": "www.google.com",
+                "classRoom": "N/A",
+                "color": {
+                    "background": "rgb(255, 0, 64)",
+                    "textColor": "rgb(255,255,255)",
+                    "border": "2px dashed rgb(255,255,255)"
+                },
+                "assignments": [{
+                    "dueDate": "1/10/2025",
+                    "assignedDate": "1/10/2025",
+                    "title": "Homework A",
+                    "type" : "Homework",
+                    "description": "This is to test that"
+                },
+                {
+                    "dueDate": "1/10/2025",
+                    "assignedDate": "1/10/2025",
+                    "title": "Homework B",
+                    "type" : "Homework",
+                    "description": "more then one homework can be shown at the same time."
+                }]
+            }
+        ]
+    }
+}

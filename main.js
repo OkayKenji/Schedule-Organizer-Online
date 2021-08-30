@@ -432,8 +432,8 @@ async function runProgram() {
           a.push(ele);
       }
 
-      generateBullets(d, clonedTempDivArr[0]);
-      generateBullets(a, clonedTempDivArr[1]);
+      generateBullets(d, clonedTempDivArr[0], true);
+      generateBullets(a, clonedTempDivArr[1], false);
 
       clonedTemp.getElementsByTagName("small")[0].textContent = `Data for: ${list[0][col]}`;
 
@@ -449,12 +449,18 @@ async function runProgram() {
    * @param {*} homeworkList List of homework assigments
    * @param {*} divToEdit Div to add bullet to
    */
-  function generateBullets(homeworkList, divToEdit) {
+  function generateBullets(homeworkList, divToEdit, dueToday) {
     if (homeworkList.length > 0) {
       let outerContainer = document.createElement("ul");
       for (let ele of homeworkList) {
         let point = document.createElement("li")
         point.appendChild(document.createTextNode(`${ele.title}, ${ele.description} (${ele.type})`));
+        if (dueToday) {
+          point.appendChild(document.createTextNode(` (Originally assigned on ${ele.assignedDate})`));
+        } else {
+          point.appendChild(document.createTextNode(` (Due on ${ele.dueDate})`));
+        }
+        
         outerContainer.appendChild(point)
       }
       divToEdit.appendChild(outerContainer);
@@ -511,8 +517,8 @@ async function runProgram() {
     clonedSpanDivArr[0].textContent = date;
     clonedSpanDivArr[1].textContent = date;
 
-    generateBulletsB(d, clonedTempDivArr[0])
-    generateBulletsB(a, clonedTempDivArr[1])
+    generateBulletsB(d, clonedTempDivArr[0], true)
+    generateBulletsB(a, clonedTempDivArr[1], false)
 
     pElement.appendChild(clonedTemp);
   }
@@ -522,7 +528,7 @@ async function runProgram() {
    * @param {*} homeworkList List of homework assigments
    * @param {*} divToEdit Div to add bullet to
    */
-  function generateBulletsB(homeworkList, divToEdit) {
+  function generateBulletsB(homeworkList, divToEdit, dueToday) {
     if (homeworkList.length > 0) {
       let outerContainer = document.createElement("ul");
       for (let ele of homeworkList) {
@@ -531,6 +537,11 @@ async function runProgram() {
         bald.textContent = `${ele.name}: `;
         point.appendChild(bald);
         point.appendChild(document.createTextNode(`${ele.title}, ${ele.description} (${ele.type})`));
+        if (dueToday) {
+          point.appendChild(document.createTextNode(` (Originally assigned on ${ele.assignedDate})`));
+        } else {
+          point.appendChild(document.createTextNode(` (Due on ${ele.dueDate})`));
+        }
         outerContainer.appendChild(point)
       }
       divToEdit.appendChild(outerContainer);

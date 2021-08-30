@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-  <script src="p5.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
   <meta charset="utf-8">
   <link rel="icon" href="favicon.png" type="image">
@@ -10,30 +9,79 @@
 </head>
 
 <body>
-  <script src="sketch.js"></script>
   <script src="main.js"></script>
-  <dialog id="dialogInfobox">
-    <p id="dialogInfoboxInfo">Hey Soichi</p>
-    <button onClick="closeDialogBox()">Exit</button>
-  </dialog>
-  <div id="attributions">
-    <h3>Attributions</h3>
-    <ul>
-      <li>MDN/Mozilla Contributors. See their website <a href="https://developer.mozilla.org/en-US/docs/Web">here</a>.
-      </li>
-      <li>W3Schools, see their website <a href="https://www.w3schools.com/">here</a>.</li>
-      <li>Coding Train, see their YouTube channel <a
-          href="https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw">here</a>.</li>
-      <li>p5.js, as the JavaScript libary, see their website <a href="https://p5js.org/">here</a>.</li>
-      <li>Code to dynamically generate the table has been adapted from <a
-          href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Traversing_an_HTML_table_with_JavaScript_and_DOM_Interfaces">here</a>.
-      </li>
-      <li>Code to display the pop-up has been adapted from <a
-          href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog">here</a>.</li>
-      <li>Developed in Virtual Studio, with the extensions "Beautify" & "ESLint", see their website <a
-          href="https://code.visualstudio.com/">here</a> (<a href="https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify">Beautify</a>, <a href="https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint">ESLint</a>).</li>
-    </ul>
+  <div class="overlay" id="overlay">
+    <div class="overlayinner" id="overlayinner">
+      <div id="innerDivOverlay"></div><br /><button class="buttonExit" id="exitButton">Exit</button>
+    </div>
   </div>
+
+  <header>
+    <h1>Schedule-Organizer</h1>
+
+    <div id="inputContainer">
+      <button id="printerFriendly">Enable printer freindly mode</button>
+      <label for="currentSemester">Current semester:</label><select id="currentSemester"></select>
+      <label for="selectWeek">Current week:</label><select id="selectWeek"></select>
+    </div>
+
+    <div id="attributions">
+      <h2>Attributions</h2>
+      <ul>
+        <li>MDN/Mozilla Contributors. See their website <a href="https://developer.mozilla.org/en-US/docs/Web">here</a>.
+        </li>
+        <li>W3Schools, see their website <a href="https://www.w3schools.com/">here</a>.</li>
+        <li>Coding Train, see their YouTube channel <a
+            href="https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw">here</a>.</li>
+        <li>p5.js, as the JavaScript libary, see their website <a href="https://p5js.org/">here</a>.</li>
+        <li>Code to dynamically generate the table has been adapted from <a
+            href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Traversing_an_HTML_table_with_JavaScript_and_DOM_Interfaces">here</a>.
+        </li>
+        <li>Code to display the pop-up has been adapted from <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog">here</a>.</li>
+        <li>Developed in Virtual Studio, with the extensions "Beautify" & "ESLint", see their website <a
+            href="https://code.visualstudio.com/">here</a> (<a
+            href="https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify">Beautify</a>, <a
+            href="https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint">ESLint</a>).</li>
+        <li>Accessibility improvements made with WAVE, see their website <a href="https://wave.webaim.org/">here</a>.
+        </li>
+      </ul>
+    </div>
+
+  </header>
+
+  <main>
+    <div id="tableDiv"></div>
+  </main>
+  <template id="template0">
+    <div>
+      <p class="cellP"><b><span id="course"></span></b>: <span id="title"></span> (<span id="crn"></span>)</p>
+      <hr>
+      <p class="cellP"><b>Time:</b> <span id="times"></span></p>
+      <p class="cellP"><b>Location:</b> <span id="location"></span></p>
+    </div>
+  </template>
+
+  <template id="template1">
+    <div>
+      <p class="cellP"><b><span id="heading" class="specialSpan"></span></b></p>
+      <p class="cellP"><b>Instructor: </b><span id="instructor"></span></p>
+      <p class="cellP"><b>Time: </b><span id="time"></span></p>
+      <p class="cellP"><b>Days: </b><span id="days"></span></p>
+      <p class="cellP"><b>Classroom: </b><span id="classroom"></span></p>
+      <div id="dueToday"><b>Due today: </b></div>
+      <div id="assignedToday"><b>Assigned today: </b></div>
+      <small id="assignFor"></small>
+    </div>
+  </template>
+
+  <template id="template2">
+    <div>
+      <div id="dueToday"><b>Due today (<span id="dueDate"></span>): </b></div>
+      <div id="assignedToday"><b>Assigned today (<span id="dateAssigned"></span>): </b></div>
+    </div>
+  </template>
+
 </body>
 
 </html>

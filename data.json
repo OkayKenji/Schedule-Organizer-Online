@@ -1,5 +1,107 @@
 {
-    "classes": {
+    "default": "Spring 2025",
+    "lastupdated": "8/28/2021",
+    "semesters": [{
+        "semester": "Fall 2024",
+        "start": "9/29/2024",
+        "numWeeks": 16,
+        "daysOff": [],
+        "classList": [{
+                "crn": "23421",
+                "course": "AAA 334",
+                "title": "Class Alpha",
+                "classIns": "Prof. 1",
+                "classStart": "8:10",
+                "classEnd": "10:05",
+                "days": "M",
+                "online": "N/A",
+                "classRoom": "Under there!",
+                "color": {
+                    "background": "rgb(255,91,61)",
+                    "textColor": "rgb(255,255,255)",
+                    "border": "2px dashed rgb(255,255,255)"
+                },
+                "assignments": [{
+                    "dueDate": "8/31/2025",
+                    "assignedDate": "8/31/2025",
+                    "title": "Read syllabus",
+                    "type": "Homework",
+                    "description": "Read it."
+                }]
+            },
+            {
+                "crn": "953343",
+                "course": "BBB 133",
+                "title": "Class Beta",
+                "classIns": "Prof. 2",
+                "classStart": "8:20",
+                "classEnd": "10:15",
+                "days": "T",
+                "online": "",
+                "classRoom": "Under where?",
+                "color": {
+                    "background": "rgb(0, 128, 255)",
+                    "textColor": "rgb(255,255,255)",
+                    "border": "2px dashed rgb(255,255,255)"
+                },
+                "assignments": []
+            },
+            {
+                "crn": "23426",
+                "course": "CCC 942",
+                "title": "Class Gamma",
+                "classIns": "Prof. 3",
+                "classStart": "8:30",
+                "classEnd": "10:25",
+                "days": "W",
+                "online": "N/A",
+                "classRoom": "Ha. Underwear.",
+                "color": {
+                    "background": "rgb(0, 200, 64)",
+                    "textColor": "rgb(255,255,255)",
+                    "border": "2px dashed rgb(255,255,255)"
+                },
+                "assignments": [{
+                    "dueDate": "10/2/2025",
+                    "assignedDate": "9/1/2025",
+                    "title": "Project A",
+                    "type": "Project",
+                    "description": "report on some stuff."
+                }]
+            },
+            {
+                "crn": "73425",
+                "course": "DDD 001",
+                "title": "Class Delta",
+                "classIns": "Prof. D",
+                "classStart": "8:40",
+                "classEnd": "10:35",
+                "days": "R",
+                "online": "N/A",
+                "classRoom": "Not funny.",
+                "color": {
+                    "background": "rgb(255, 0, 64)",
+                    "textColor": "rgb(255,255,255)",
+                    "border": "2px dashed rgb(255,255,255)"
+                },
+                "assignments": [{
+                        "dueDate": "1/10/2025",
+                        "assignedDate": "1/10/2025",
+                        "title": "Homework A",
+                        "type": "Homework",
+                        "description": "This is to test that"
+                    },
+                    {
+                        "dueDate": "1/10/2025",
+                        "assignedDate": "1/10/2025",
+                        "title": "Homework B",
+                        "type": "Homework",
+                        "description": "more then one homework can be shown at the same time."
+                    }
+                ]
+            }
+        ]
+    }, {
         "semester": "Spring 2025",
         "start": "1/5/2025",
         "numWeeks": 16,
@@ -23,7 +125,7 @@
                     "dueDate": "1/6/2025",
                     "assignedDate": "1/6/2025",
                     "title": "Read syllabus",
-                    "type" : "Homework",
+                    "type": "Homework",
                     "description": "Read it."
                 }]
             },
@@ -46,7 +148,7 @@
                     "dueDate": "1/11/2025",
                     "assignedDate": "1/7/2025",
                     "title": "First Quiz",
-                    "type" : "Quiz",
+                    "type": "Quiz",
                     "description": "Whaaaat? A quiz already!?"
                 }]
             },
@@ -69,12 +171,12 @@
                     "dueDate": "2/2/2025",
                     "assignedDate": "1/6/2025",
                     "title": "Project A",
-                    "type" : "Project",
+                    "type": "Project",
                     "description": "report on some stuff."
                 }]
             },
             {
-                "crn": 93232,
+                "crn": "93232",
                 "course": "ABC 999",
                 "title": "Class D",
                 "classIns": "Prof. D",
@@ -89,20 +191,90 @@
                     "border": "2px dashed rgb(255,255,255)"
                 },
                 "assignments": [{
-                    "dueDate": "1/10/2025",
-                    "assignedDate": "1/10/2025",
-                    "title": "Homework A",
-                    "type" : "Homework",
-                    "description": "This is to test that"
+                        "dueDate": "1/10/2025",
+                        "assignedDate": "1/10/2025",
+                        "title": "Homework A",
+                        "type": "Homework",
+                        "description": "This is to test that"
+                    },
+                    {
+                        "dueDate": "1/10/2025",
+                        "assignedDate": "1/10/2025",
+                        "title": "Homework B",
+                        "type": "Homework",
+                        "description": "more then one homework can be shown at the same time."
+                    }
+                ]
+            }
+        ]
+    }, {
+        "semester": "Fall 2025",
+        "start": "8/31/2025",
+        "numWeeks": 13,
+        "daysOff": [],
+        "classList": [{
+                "crn": "23234",
+                "course": "SPX 128",
+                "title": "Class 1",
+                "classIns": "Prof. 1",
+                "classStart": "9:05",
+                "classEnd": "11:05",
+                "days": "TR",
+                "online": "N/A",
+                "classRoom": "Somewhere, Mars, Hopefully",
+                "color": {
+                    "background": "rgb(255,91,61)",
+                    "textColor": "rgb(255,255,255)",
+                    "border": "2px dashed rgb(255,255,255)"
                 },
-                {
-                    "dueDate": "1/10/2025",
-                    "assignedDate": "1/10/2025",
-                    "title": "Homework B",
-                    "type" : "Homework",
-                    "description": "more then one homework can be shown at the same time."
+                "assignments": [{
+                    "dueDate": "8/31/2025",
+                    "assignedDate": "8/31/2025",
+                    "title": "Read syllabus",
+                    "type": "Homework",
+                    "description": "Read it."
+                }]
+            },
+            {
+                "crn": "12453",
+                "course": "RKLB 256",
+                "title": "Class 2",
+                "classIns": "Prof. 2",
+                "classStart": "12:25",
+                "classEnd": "14:50",
+                "days": "MF",
+                "online": "",
+                "classRoom": "Peter, Venus",
+                "color": {
+                    "background": "rgb(0, 128, 255)",
+                    "textColor": "rgb(255,255,255)",
+                    "border": "2px dashed rgb(255,255,255)"
+                },
+                "assignments": []
+            },
+            {
+                "crn": "22522",
+                "course": "ASTR 512",
+                "title": "Class 3",
+                "classIns": "Prof. 3",
+                "classStart": "18:10",
+                "classEnd": "20:20",
+                "days": "M",
+                "online": "N/A",
+                "classRoom": "Earth",
+                "color": {
+                    "background": "rgb(0, 200, 64)",
+                    "textColor": "rgb(255,255,255)",
+                    "border": "2px dashed rgb(255,255,255)"
+                },
+                "assignments": [{
+                    "dueDate": "10/2/2025",
+                    "assignedDate": "9/1/2025",
+                    "title": "Project A",
+                    "type": "Project",
+                    "description": "report on some stuff."
                 }]
             }
         ]
-    }
+    }]
 }
